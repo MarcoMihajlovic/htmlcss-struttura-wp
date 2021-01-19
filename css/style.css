@@ -10,7 +10,6 @@ main {
   background-color: darkblue;
   margin-top: 2vh;
   padding-bottom: 2%;
-  float: left;
 }
 
 footer {
@@ -22,10 +21,20 @@ footer {
   float: left;
 }
 
-.container {
+.center {
   height: 100vh;
   width: 60%;
-  margin: 20px auto;
+  margin: 2vh auto;
+}
+
+.container {
+  height: 100%;
+}
+
+.container::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .slot1 {
@@ -46,8 +55,6 @@ footer {
   height: 10%;
   background-color: lightblue;
   margin-bottom: 2%;
-  float: left;
-
 }
 
 .column_left {
